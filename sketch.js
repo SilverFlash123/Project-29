@@ -59,7 +59,7 @@ function setup(){
 
     console.log(polygon);
 
-  sling= new SlingShot(polygon, {x:190, y: 470});
+  sling= new SlingShot(polygon, {x:150, y: 450});
 
   //set2
 
@@ -122,8 +122,6 @@ function draw(){
     block15.display();
 
     piece9.display();
-   
-    sling.display();
 
     fill("red");
     block16.display();
@@ -134,12 +132,11 @@ function draw(){
     posX=polygon.position.x;
     posY=polygon.position.y;
     
-
     imageMode(CENTER);
     image(polygonImg,posX,posY,50,50);
     
 
-    
+    sling.display();
 
     drawSprites();
 
